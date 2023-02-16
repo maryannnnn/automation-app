@@ -1,4 +1,9 @@
 import "./offer.scss"
+import Bring from '../../../assets/img/bring.svg'
+import Make from '../../../assets/img/make.svg'
+import Build from '../../../assets/img/build.svg'
+import Arrow from '../../../assets/img/strelka.svg'
+import {NavLink} from 'react-router-dom';
 
 const Offer = () => {
     return (
@@ -12,7 +17,7 @@ const Offer = () => {
                         <div className="offer__modules-item">
                             <div className="offer__modules-item--img-wrapper">
                                 <img
-                                    src="../../../assets/img/bring.svg"
+                                    src={Bring}
                                     alt="Bring Technology"
                                     className="offer__modules-item--img"
                                 />
@@ -25,21 +30,21 @@ const Offer = () => {
                                 Many tech products are easy to install on your own, while
                                 others require a professional.
                             </p>
-                            <a href="#" className="offer__modules-item--link">
+                            <NavLink to="#" className="offer__modules-item--link">
                     <span className="offer__modules-item--link-text">
                       Learn more
                     </span>
                                 <img
-                                    src="../../../assets/img/strelka.svg"
+                                    src={Arrow}
                                     alt="str"
                                     className="offer__modules-item--link-img"
                                 />
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="offer__modules-item">
                             <div className="offer__modules-item--img-wrapper">
                                 <img
-                                    src="../../../assets/img/make.svg"
+                                    src={Make}
                                     alt="Bring Technology"
                                     className="offer__modules-item--img"
                                 />
@@ -52,22 +57,22 @@ const Offer = () => {
                                 business. Consider it your checklist for maintaining a
                                 successful business.
                             </p>
-                            <a href="#" className="offer__modules-item--link">
+                            <NavLink to="#" className="offer__modules-item--link">
                     <span className="offer__modules-item--link-text">
                       Learn more
                     </span>
                                 <img
-                                    src="../../../assets/img/strelka.svg"
+                                    src={Arrow}
                                     alt="str"
                                     className="offer__modules-item--link-img"
                                 />
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="offer__modules-item--empty"></div>
                         <div className="offer__modules-item">
                             <div className="offer__modules-item--img-wrapper">
                                 <img
-                                    src="../../../assets/img/build.svg"
+                                    src={Build}
                                     alt="Bring Technology"
                                     className="offer__modules-item--img"
                                 />
@@ -79,16 +84,16 @@ const Offer = () => {
                                 A successful new product launch can provide the company with
                                 tremendous benefits!
                             </p>
-                            <a href="#" className="offer__modules-item--link">
+                            <NavLink to="#" className="offer__modules-item--link">
                     <span className="offer__modules-item--link-text">
                       Learn more
                     </span>
                                 <img
-                                    src="../../../assets/img/strelka.svg"
+                                    src={Arrow}
                                     alt="str"
                                     className="offer__modules-item--link-img"
                                 />
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
