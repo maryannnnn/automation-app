@@ -1,0 +1,68 @@
+@import "../../../assets/scss/colors";
+@import "../../../assets/scss/mixins";
+
+.header {
+  background: $blue-9-gr;
+  height: 100vh;
+  position: relative;
+
+  &::after {
+    content: '';
+    background-image: url(../../../assets/img/bg_header.svg);
+    background-repeat: no-repeat;
+    background-size: 50vw 70vh;
+    position: absolute;
+    animation: right 1.2s cubic-bezier(0.39, 0.58, 0.57, 1);
+    top: 10vh;
+    left: 40vw;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    z-index: 1;
+    margin: 10px;
+    animation: left 1.5s cubic-bezier(0.39, 0.58, 0.57, 1);
+
+    &-title {
+      @include title-1;
+      color: $blue-01;
+      max-width: 510px;
+    }
+
+    &-text {
+      max-width: 425px;
+    }
+
+    &-btn {
+      @include button-1;
+      width: 220px;
+      height: 56px;
+    }
+  }
+}
+
+@keyframes left {
+  0% {
+    transform: translateX(-3000px);
+  }
+
+  100% {
+    transform: translateX(0)
+  }
+}
+
+@keyframes right {
+  0% {
+    transform: translateX(3000px);
+  }
+
+  100% {
+    transform: translateX(0)
+  }
+}

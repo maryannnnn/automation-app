@@ -1,0 +1,32 @@
+@import "../../assets/scss/colors";
+@import "../../assets/scss/mixins";
+
+input {
+  border: none;
+  border-bottom: $blue-02 solid 3px;
+  background: transparent;
+  width: 100%;
+  padding: 3px;
+  &:focus {
+    outline: none;
+    transform: scale(1.01);
+  }
+}
+
+
+::-webkit-input-placeholder { /* Chrome */
+  color: $blue-04;
+  font-weight: 700;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $blue-04;
+  font-weight: 700;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $blue-04;
+  font-weight: 700;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: $blue-04;
+  font-weight: 700;
+}

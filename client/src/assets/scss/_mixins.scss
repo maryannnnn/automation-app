@@ -1,0 +1,101 @@
+@import 'colors';
+@import "fonts";
+
+@mixin title-1 {
+  font-family: $font-1;
+  font-size: 64px;
+  line-height: 74px;
+  letter-spacing: 116%;
+}
+
+@mixin title-2 {
+  font-family: $font-2;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.05em;
+}
+
+@mixin title-3 {
+  font-family: $font-2;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 150%;
+}
+
+@mixin title-4 {
+  font-family: $font-2;
+  font-size: 28px;
+  line-height: 46px;
+  letter-spacing: 164%;
+}
+
+@mixin title-5 {
+  font-family: $font-2;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 214%;
+}
+
+@mixin menu-1 {
+  font-family: $font-2;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 120%;
+}
+
+@mixin text-1 {
+  font-family: $font-2;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 162%;
+}
+
+@mixin button-1 {
+  @include text-1;
+  color: $white;
+  background-color: $blue-04;
+  box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+  border-radius: 10px;
+  border: 1px solid $blue-01;
+  cursor: pointer;
+  &:hover {
+    color: $blue-01;
+    background-color: $blue-05;
+  }
+}
+
+@mixin button-2 {
+  @include text-1;
+  color: $white;
+  background-color: $blue-04;
+  box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+  border-radius: 10px;
+  border: 1px solid $white;
+  cursor: pointer;
+  &:hover {
+    color: $blue-01;
+    background-color: $blue-05;
+  }
+}
+
+@mixin link-1 {
+  color: $blue-03;
+  &:hover {
+    color: $blue-05;
+  }
+}
+
+@mixin link-2 {
+  color: $white;
+
+  &:hover {
+    color: $blue-05;
+  }
+}
+
+
+
+
+
+
+
