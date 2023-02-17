@@ -1,19 +1,19 @@
-import React from 'react';
-import { useSelector } from 'react-redux'
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch} from 'react-redux'
 import './user.css'
-//import { actionListUsers } from '../../actions/userActions'
+import { actionListUsers } from '../../actions/userActions'
 import { MessageBox, LoadingBox } from '../../utils/boxes/boxes'
 
 const ListUsers = () => {
 
-  // const dispatch = useDispatch()
-  //
-  // useEffect(() => {
-  //   dispatch( actionListUsers() )
-  // }, [])
+  const dispatch = useDispatch()
 
-  //const authLoginR = useSelector((state) => state.authLoginR)
-  //const { isAuth } = authLoginR
+  useEffect(() => {
+    dispatch( actionListUsers() )
+  }, [dispatch])
+
+  // const authLoginR = useSelector((state) => state.authLoginR)
+  // const { isAuth } = authLoginR
 
   const userListR = useSelector((state) => state.userListR)
   const { loading, error, users } = userListR

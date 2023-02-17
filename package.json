@@ -1,6 +1,7 @@
 {
   "scripts": {
     "build": "cd client && npm install && npm run build",
+    "lint": "cd client && npx eslint ./src",
     "start": "cross-env NODE_ENV=production node server/index.js",
     "server": "npm run start --prefix server",
     "client": "npm run start --prefix client",
