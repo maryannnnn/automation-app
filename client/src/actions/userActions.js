@@ -1,5 +1,4 @@
 import $api from '../http/api'
-import axios from 'axios'
 
 import {
 USER_LIST_REQUEST,
