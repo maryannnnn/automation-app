@@ -27,7 +27,7 @@ async (error) => {
 
   if ((originalConfig.url !== "/api/auth/login" || originalConfig.url !== "/api/auth/soclogin") && error.response) {
     // Access Token was expired
-      if (error.response.status == 401 && error.config && !error.config._isRetry) {
+      if (error.response.status === 401 && error.config && !error.config._isRetry) {
         originalConfig._isRetry = true;
         try {
           const response = await axios.get(`${main_URL}/api/auth/refresh`, {

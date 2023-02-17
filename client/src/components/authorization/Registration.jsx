@@ -9,7 +9,7 @@ import { validFormReg } from '../../utils/validators'
 const Registration = () => {
 
   const authRegisterR = useSelector((state) => state.authRegisterR)
-  const { currentUser, loading, error } = authRegisterR
+  const { loading, error } = authRegisterR
   
   const dispatch = useDispatch()
 

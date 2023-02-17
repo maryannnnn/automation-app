@@ -9,11 +9,11 @@ const ListUsers = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    dispatch( actionListUsers() ) 
-  }, [])
+    dispatch( actionListUsers() )
+  }, [dispatch])
 
-  const authLoginR = useSelector((state) => state.authLoginR)
-  const { isAuth } = authLoginR
+  // const authLoginR = useSelector((state) => state.authLoginR)
+  // const { isAuth } = authLoginR
 
   const userListR = useSelector((state) => state.userListR)
   const { loading, error, users } = userListR
